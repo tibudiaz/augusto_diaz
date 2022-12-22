@@ -15,7 +15,6 @@ body{
     background: rgb(0,0,0);
     background: linear-gradient(0deg, rgba(0,0,0,1) 8%, rgba(73,73,73,1) 50%, rgba(148,148,148,1) 100%);
     color: var(--primercolor);
-
 }
 h1{
     margin-top: 0px;
@@ -62,7 +61,7 @@ header img{
     color: rgb(204, 0, 0);
     text-shadow: 5px 5px 10px black;
     font-weight: bold;
-    
+
 }
 #toggler,
 .navbar label{
@@ -191,7 +190,7 @@ strong {
     height: 500px;
     transform-origin: 50% 0;
     transform: rotateX(-70deg);
-    
+
 }
 .item-3d:nth-child(even) .ground:before {
     background-position: 100% 50%;
@@ -269,7 +268,7 @@ strong {
 .item-img img {
     display: block;
     width: 100%;
-    height: auto;  
+    height: auto;
     transform-origin: 50% 100%;
     transform: translateZ(-5px);
 }
@@ -449,11 +448,7 @@ strong {
         grid-template-columns: repeat(2,1fr);
     }
 }
-footer{
-    text-align: center;
-    color: #DAD7D6;
-    background-color:#333131
-}
+
 
 
 /* Nosotros */
@@ -503,9 +498,10 @@ footer{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 15px;
-    margin: auto;
-    justify-items: center;
-    align-content: center;
+    margin-top: 2%;
+    margin-left: 17%;
+    position: absolute;
+    gap: 20%;
 }
 .card{
     height: 250px;
@@ -533,7 +529,7 @@ footer{
     height: 200px;
     width: 200px;
     border-top: 8px solid var(--primercolor);
-    border-bottom: 8px solid var(--primercolor); 
+    border-bottom: 8px solid var(--primercolor);
     object-fit: cover;
     margin: 3px auto;
     transition: all 0.3s ease;
@@ -563,7 +559,7 @@ footer{
     border-radius: 20px;
     background-color: rgb(238, 42, 98);
     transform: rotate(120deg);
-} 
+}
 .desplazar{
     opacity: 0;
     transition: all .5s ease;
@@ -643,12 +639,16 @@ footer{
     .contenedor{
         gap: 5px;
     }
-} 
+}
+
+/* formulario contacto */
+
 fieldset{
+    position: inherit;
     border:3px solid var(--segundocolor);
     background-color: var(--cuartocolor);
     border-radius: 10px;
-    margin-top: 3%;
+    margin-top: 17%;
     color: var(--primercolor);
     text-shadow: 5px 5px 10px black;
 }
@@ -656,16 +656,6 @@ fieldset{
     margin-left: 85%;
 }
 @media only screen and (min-width: 1280px){
-    #Contacto{
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-    }
-    .Augusto{
-        margin: 5%;
-    }
-    .Ezequiel{
-        margin: 5%;
-    }
     fieldset{
         margin-left: 30%;
         margin-right: 30%;
@@ -730,3 +720,15 @@ fieldset{
     100%{left: 0px;}
 }
 
+/* Footer */
+footer{
+    text-align: center;
+    color: #DAD7D6;
+    background-color:#333131
+}
+.foot{
+    margin-top: 5%;
+}
+.footer__ubicacion{
+    margin-top: 12%;
+}
