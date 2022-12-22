@@ -14,7 +14,8 @@
 body{
     background: rgb(0,0,0);
     background: linear-gradient(0deg, rgba(0,0,0,1) 8%, rgba(73,73,73,1) 50%, rgba(148,148,148,1) 100%);
-    margin: 0px 0px;
+    color: var(--primercolor);
+
 }
 h1{
     margin-top: 0px;
@@ -57,6 +58,12 @@ header img{
     gap: 25px;
     color: var(--primercolor);
 }
+.list li:hover{
+    color: rgb(204, 0, 0);
+    text-shadow: 5px 5px 10px black;
+    font-weight: bold;
+    
+}
 #toggler,
 .navbar label{
     display: none;
@@ -71,6 +78,8 @@ header img{
         flex-direction: column;
         align-items: center;
         padding: 20px;
+        font-size: 20px;
+        text-shadow: 5px 5px 10px rgb(119, 28, 28);
     }
     .navbar label{
         display: inline-flex;
@@ -111,13 +120,7 @@ header img{
     display: table;
     clear: both;
 }
-body {
-    font-family: "Myriad Pro", sans-serif;
-    line-height: 1.5;
-    color: var(--primercolor);
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
+
 @media (max-width: 700px) {
     body {
         font-size: 50%;
@@ -126,16 +129,15 @@ body {
 .link_foto {
     text-decoration: none;
     color: rgb(0, 170, 255);
-    font-size: 30px;
+    font-size: 40px;
     text-shadow: 5px 5px 10px black;
-    font-weight: bold;
+
 }
 strong {
     font-size: 36px;
     color: var(--primercolor);
 }
 .wrap-3d {
-    width: 100%;
     height: 100%;
     max-height: 100%;
     padding-top: 5px;
@@ -161,13 +163,6 @@ strong {
 }
 .ground {
     position: absolute;
-    top: 0;
-    right: -50%;
-    bottom: 0;
-    left: -50%;
-    width: 200%;
-    margin: 0 auto;
-    background-size: 100%;
     transform-origin: 50% 100%;
     transform: rotateX(70deg);
     transform-style: preserve-3d;
@@ -327,7 +322,7 @@ strong {
     }
 }
 .item-caption p {
-    font-size: 87.5%;
+    font-size: 25px;
     line-height: 1.333;
 
 }
