@@ -503,6 +503,12 @@ strong {
     position: absolute;
     gap: 20%;
 }
+@media only screen and (max-width: 400px){
+    .contenedor{
+        position: relative;
+        margin-left: 0%;
+    }
+}
 .card{
     height: 250px;
     width: 300px;
