@@ -738,3 +738,28 @@ footer{
 .footer__ubicacion{
     margin-top: 12%;
 }
+
+/* financiacion */
+
+#Financiacion{
+    display: flex;
+    justify-content: center;
+    margin: 10px auto;
+}
+.financiacion{
+    background-color: var(--cuartocolor);
+    color: var(--primercolor);
+    text-shadow: 5px 5px 10px black;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 20px;
+    border: 5px solid var(--segundocolor);
+    padding: 12px 50px;
+    box-shadow: 5px 5px 15px black;
+}
+input{
+    margin: 10px;
+    border-radius: 5px;
+    font-size: 15px;
+}
