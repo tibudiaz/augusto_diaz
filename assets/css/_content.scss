@@ -1,0 +1,18 @@
+@use '_common' as c;
+
+
+
+body{
+    background: linear-gradient(0deg, rgba(0,0,0,1) 8%, rgba(73,73,73,1) 50%, rgba(148,148,148,1) 100%);
+    color: c.$primercolor;
+}
+h1{
+    margin-top: 0px;
+    font-size: 40px;
+    color: c.$primercolor;
+    background-color: c.$menucolor;
+    text-align: center;
+    margin-bottom: 0px;
+    box-shadow: 5px 5px 10px black;
+
+}

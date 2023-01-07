@@ -1,0 +1,40 @@
+@use '_common' as c;
+
+#ubicacion{
+    display: flex;
+    flex-direction: column;
+}
+.mapa{
+    margin-left: 13%;
+    margin-top: 10px;
+
+}
+.ubi{
+    color: c.$primercolor;
+    background-color: c.$cuartocolor;
+    border: 3px solid c.$segundocolor;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px black;
+    padding: 5%;
+    margin-top: 10px;
+}
+@media only screen and (min-width: 1280px){
+    #ubicacion{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .ubi{
+        padding: 50px;
+        margin-left: 3%;
+        margin-right: 30%;
+    }
+    .mapa{
+        position: relative;
+        animation: muevete 10s;
+    }
+}
+@keyframes muevete {
+	0%{left:500px}
+	50%{left: 250px;}
+    100%{left: 0px;}
+}
