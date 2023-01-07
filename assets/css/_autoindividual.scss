@@ -8,6 +8,7 @@
     color: c.$primercolor;
     margin-top: 1px;
     width: 90%;
+    margin-bottom: 15px;
     background-color: c.$menucolor;
     display: inline-block;
     font-size: 20px;
@@ -17,18 +18,13 @@
 }
 .auto__individual li{
     margin-top: 15px;
+    margin-bottom: 15px;
 }
 .auto__slider{
     width: 70%;
     border-radius: 10px;
-    border: solid 5px c.$menucolor;
+    border: solid 3px c.$segundocolor;
     box-shadow: 8px 5px 10px black;
 }
-@media only screen and (min-width: 1280px){
-    .grid__autos{
-        margin-left: 5%;
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-    }
-}
+
 

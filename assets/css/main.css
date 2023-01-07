@@ -9,12 +9,12 @@ body {
 }
 
 h1 {
-  margin-top: 0px;
+  margin-top: 2px;
   font-size: 40px;
   color: #DAD7D6;
   background-color: rgba(218, 215, 214, 0.1921568627);
   text-align: center;
-  margin-bottom: 0px;
+  margin-bottom: 2px;
   box-shadow: 5px 5px 10px black;
 }
 
@@ -62,9 +62,7 @@ strong {
 }
 
 .wrap-3d {
-  height: 100%;
-  max-height: 100%;
-  padding-top: 5px;
+  margin-top: 5px;
   overflow-x: hidden;
   overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
@@ -349,7 +347,7 @@ footer {
 }
 
 .footer__ubicacion {
-  margin-top: 12%;
+  margin-top: 10%;
 }
 
 .navbar {
@@ -442,7 +440,7 @@ header img {
   margin: auto;
   padding: 10px 30px;
   border-radius: 2%;
-  border: 1px solid #C43415;
+  border: 1px solid rgba(196, 53, 21, 0.5411764706);
   transition: all 0.4s ease-in-out;
   box-shadow: 0px 1px 50px 0px black;
   text-align: center;
@@ -597,7 +595,7 @@ header img {
 }
 /* formulario contacto */
 fieldset {
-  border: 1px solid #C43415;
+  border: 1px solid rgba(196, 53, 21, 0.5411764706);
   background: linear-gradient(0deg, rgba(24, 23, 23, 0.568627451), rgba(226, 223, 223, 0.4862745098));
   border-radius: 10px;
   margin-top: 5%;
@@ -646,7 +644,7 @@ fieldset {
   text-align: center;
   border-radius: 5px;
   font-size: 20px;
-  border: 5px solid #C43415;
+  border: 5px solid rgba(196, 53, 21, 0.5411764706);
   padding: 12px 50px;
   box-shadow: 5px 5px 15px black;
 }
@@ -670,7 +668,7 @@ input {
 .ubi {
   color: #DAD7D6;
   background-color: #7A7877;
-  border: 3px solid #C43415;
+  border: 3px solid rgba(196, 53, 21, 0.5411764706);
   border-radius: 15px;
   box-shadow: 5px 5px 10px black;
   padding: 5%;
@@ -683,36 +681,14 @@ input {
     grid-template-columns: repeat(2, 1fr);
   }
   .ubi {
-    padding: 50px;
-    margin-left: 3%;
-    margin-right: 30%;
+    padding: 100px;
+    margin: 0 auto;
+    margin-top: 12px;
   }
   .mapa {
     position: relative;
-    -webkit-animation: muevete 10s;
-            animation: muevete 10s;
-  }
-}
-@-webkit-keyframes muevete {
-  0% {
-    left: 500px;
-  }
-  50% {
-    left: 250px;
-  }
-  100% {
-    left: 0px;
-  }
-}
-@keyframes muevete {
-  0% {
-    left: 500px;
-  }
-  50% {
-    left: 250px;
-  }
-  100% {
-    left: 0px;
+    margin: 0 auto;
+    margin-top: 12px;
   }
 }
 #auto {
@@ -724,6 +700,7 @@ input {
   color: #DAD7D6;
   margin-top: 1px;
   width: 90%;
+  margin-bottom: 15px;
   background-color: rgba(218, 215, 214, 0.1921568627);
   display: inline-block;
   font-size: 20px;
@@ -734,22 +711,16 @@ input {
 
 .auto__individual li {
   margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .auto__slider {
   width: 70%;
   border-radius: 10px;
-  border: solid 5px rgba(218, 215, 214, 0.1921568627);
+  border: solid 3px rgba(196, 53, 21, 0.5411764706);
   box-shadow: 8px 5px 10px black;
 }
 
-@media only screen and (min-width: 1280px) {
-  .grid__autos {
-    margin-left: 5%;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
 #nosotros {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -764,7 +735,7 @@ input {
 .agencia__video {
   width: 90%;
   margin-top: 15%;
-  border: 3px solid #C43415;
+  border: 3px solid rgba(196, 53, 21, 0.5411764706);
   border-radius: 10px;
   box-shadow: 5px 5px 10px black;
 }

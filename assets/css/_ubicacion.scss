@@ -24,17 +24,14 @@
         grid-template-columns: repeat(2,1fr);
     }
     .ubi{
-        padding: 50px;
-        margin-left: 3%;
-        margin-right: 30%;
+        padding: 100px;
+        margin: 0 auto;
+        margin-top: 12px;
     }
     .mapa{
         position: relative;
-        animation: muevete 10s;
+        margin: 0 auto;
+        margin-top: 12px;
+
     }
-}
-@keyframes muevete {
-	0%{left:500px}
-	50%{left: 250px;}
-    100%{left: 0px;}
 }
