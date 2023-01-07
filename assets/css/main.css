@@ -74,12 +74,17 @@ strong {
 }
 
 .item-3d {
-  width: 100%;
-  margin-bottom: 5%;
+  width: 90%;
+  margin: 1% auto;
   padding-top: 2%;
-  padding-bottom: 5%;
+  padding-bottom: 2%;
   transform-origin: 50% 100%;
   transform-style: preserve-3d;
+  background-color: rgba(255, 255, 255, 0.281);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  border-radius: 20px;
+  border: 2px solid rgba(255, 0, 0, 0.315);
 }
 
 @media (max-width: 700px) {
@@ -437,11 +442,11 @@ header img {
   margin: auto;
   padding: 10px 30px;
   border-radius: 2%;
-  border: 1px solid #DAD7D6;
+  border: 1px solid #C43415;
   transition: all 0.4s ease-in-out;
   box-shadow: 0px 1px 50px 0px black;
   text-align: center;
-  background: linear-gradient(-135deg, #181717, rgba(255, 0, 0, 0.4862745098));
+  background: linear-gradient(0deg, rgba(24, 23, 23, 0.568627451), rgba(226, 223, 223, 0.4862745098));
 }
 
 .card:hover {
@@ -478,7 +483,7 @@ header img {
 .card-encabezado:after {
   border-radius: 50%;
   z-index: 20;
-  background-color: yellow;
+  background-color: rgba(255, 255, 243, 0.507);
   width: 50px;
   height: 50px;
   top: 0px;
@@ -491,7 +496,7 @@ header img {
   bottom: 0;
   left: -10px;
   border-radius: 20px;
-  background-color: rgb(238, 42, 98);
+  background-color: rgb(240, 8, 8);
   transform: rotate(120deg);
 }
 
@@ -558,6 +563,7 @@ header img {
   font-size: 16px;
   width: 80%;
   margin: 0 auto;
+  margin-top: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -591,8 +597,8 @@ header img {
 }
 /* formulario contacto */
 fieldset {
-  border: 3px solid #C43415;
-  background-color: #7A7877;
+  border: 1px solid #C43415;
+  background: linear-gradient(0deg, rgba(24, 23, 23, 0.568627451), rgba(226, 223, 223, 0.4862745098));
   border-radius: 10px;
   margin-top: 5%;
   color: #DAD7D6;

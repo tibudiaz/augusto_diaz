@@ -19,11 +19,11 @@
     margin: auto;
     padding: 10px 30px;
     border-radius: 2%;
-    border: 1px solid c.$primercolor;
+    border: 1px solid c.$segundocolor;
     transition: all .4s ease-in-out;
     box-shadow: 0px 1px 50px 0px black;
     text-align: center;
-    background: linear-gradient(-135deg, #181717, #ff00007c);
+    background: linear-gradient(0deg, #18171791, #e2dfdf7c);
 }
 .card:hover{
     height: 440px;
@@ -54,7 +54,7 @@
 .card-encabezado:after{
     border-radius: 50%;
     z-index: 20;
-    background-color: yellow;
+    background-color: rgba(255, 255, 243, 0.507);
     width: 50px;
     height: 50px;
     top: 0px;
@@ -66,7 +66,7 @@
     bottom: 0;
     left: -10px;
     border-radius: 20px;
-    background-color: rgb(238, 42, 98);
+    background-color: rgb(240, 8, 8);
     transform: rotate(120deg);
 }
 .desplazar{
@@ -122,6 +122,7 @@
     font-size: 16px;
     width: 80%;
     margin: 0 auto;
+    margin-top: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -154,8 +155,8 @@
 
 fieldset{
 
-    border:3px solid c.$segundocolor;
-    background-color: c.$cuartocolor;
+    border:1px solid c.$segundocolor;
+    background: linear-gradient(0deg, #18171791, #e2dfdf7c);
     border-radius: 10px;
     margin-top: 5%;
     color: c.$primercolor;
