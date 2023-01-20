@@ -7,7 +7,7 @@
     align-items: center;
     justify-content: space-between;
     background-color: c.$menucolor;
-    padding-block: 5px;
+
     box-shadow: 5px 5px 10px black;
 }
 .navbar a{
@@ -32,10 +32,14 @@
     font-weight: bold;
 
 }
+.hamburguesa{
+    width: 15px;
+}
 #toggler,
 .navbar label{
     display: none;
 }
+
 @media screen and (max-width: 600px){
     .menu{
         width: 100%;

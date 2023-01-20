@@ -1,4 +1,3 @@
-@charset "UTF-8";
 * {
   font-family: "Source Sans Pro", sans-serif;
 }
@@ -16,6 +15,10 @@ h1 {
   text-align: center;
   margin-bottom: 2px;
   box-shadow: 5px 5px 10px black;
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
 
 @media only screen and (max-width: 700px) {
@@ -52,12 +55,13 @@ h1 {
 .link_foto {
   text-decoration: none;
   color: rgb(0, 170, 255);
-  font-size: 40px;
+  font-size: 30px;
   text-shadow: 5px 5px 10px black;
+  font-weight: bold;
 }
 
 strong {
-  font-size: 36px;
+  font-size: 30px;
   color: #DAD7D6;
 }
 
@@ -90,93 +94,6 @@ strong {
     margin-bottom: 10%;
   }
 }
-.ground {
-  position: absolute;
-  transform-origin: 50% 100%;
-  transform: rotateX(70deg);
-  transform-style: preserve-3d;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-}
-
-.ground:before,
-.ground:after {
-  content: "";
-  position: absolute;
-  width: 100%;
-}
-
-.ground:before {
-  top: 0;
-  left: 50%;
-  height: 100%;
-  width: 50%;
-  max-width: 50rem;
-  background-size: 50% 80%;
-  background-repeat: no-repeat;
-  transform: translateX(-50%);
-}
-
-.ground:after {
-  bottom: -500px;
-  left: 0;
-  height: 500px;
-  transform-origin: 50% 0;
-  transform: rotateX(-70deg);
-}
-
-.item-3d:nth-child(even) .ground:before {
-  background-position: 100% 50%;
-  -webkit-animation: floating-shadow-r 5s -1s infinite;
-  animation: floating-shadow-r 5s -1s infinite;
-}
-
-.item-3d:nth-child(odd) .ground:before {
-  background-position: 0 50%;
-  -webkit-animation: floating-shadow-l 5s -1s infinite;
-  animation: floating-shadow-l 5s -1s infinite;
-}
-
-@-webkit-keyframes floating-shadow-l {
-  0%, 100% {
-    background-size: 35% 80%;
-    background-position: 10% 80%;
-  }
-  50% {
-    background-size: 50% 80%;
-    background-position: 0 80%;
-  }
-}
-@keyframes floating-shadow-l {
-  0%, 100% {
-    background-size: 35% 80%;
-    background-position: 10% 80%;
-  }
-  50% {
-    background-size: 50% 80%;
-    background-position: 0 80%;
-  }
-}
-@-webkit-keyframes floating-shadow-r {
-  0%, 100% {
-    background-size: 35% 80%;
-    background-position: 90% 80%;
-  }
-  50% {
-    background-size: 50% 80%;
-    background-position: 100% 80%;
-  }
-}
-@keyframes floating-shadow-r {
-  0%, 100% {
-    background-size: 35% 80%;
-    background-position: 90% 80%;
-  }
-  50% {
-    background-size: 50% 80%;
-    background-position: 100% 80%;
-  }
-}
 .item-content {
   position: relative;
   width: 100%;
@@ -184,7 +101,6 @@ strong {
   margin: 0 auto;
   display: flex;
   align-items: center;
-  transform: translateZ(0);
 }
 
 .item-img {
@@ -276,54 +192,6 @@ strong {
   opacity: 0.5;
 }
 
-.intro {
-  position: relative;
-  width: 100%;
-  max-width: 50rem;
-  margin: 0 auto;
-  padding: 15% 2rem;
-  text-align: center;
-}
-
-.intro:after {
-  content: "↓";
-  position: absolute;
-  bottom: 20%;
-  left: 0;
-  width: 100%;
-  font-size: 150%;
-  -webkit-animation: scroll-arrw 1s -1s infinite linear;
-  animation: scroll-arrw 1s -1s infinite linear;
-}
-
-@-webkit-keyframes scroll-arrw {
-  0% {
-    transform: translateY(0);
-    opacity: 0;
-  }
-  50% {
-    transform: translateY(80%);
-    opacity: 1;
-  }
-  100% {
-    transform: translateY(160%);
-    opacity: 0;
-  }
-}
-@keyframes scroll-arrw {
-  0% {
-    transform: translateY(0);
-    opacity: 0;
-  }
-  50% {
-    transform: translateY(80%);
-    opacity: 1;
-  }
-  100% {
-    transform: translateY(160%);
-    opacity: 0;
-  }
-}
 .intro h1 {
   font-size: 250%;
   font-weight: normal;
@@ -356,7 +224,6 @@ footer {
   align-items: center;
   justify-content: space-between;
   background-color: rgba(218, 215, 214, 0.1921568627);
-  padding-block: 5px;
   box-shadow: 5px 5px 10px black;
 }
 
@@ -384,6 +251,10 @@ footer {
   color: rgb(204, 0, 0);
   text-shadow: 5px 5px 10px black;
   font-weight: bold;
+}
+
+.hamburguesa {
+  width: 15px;
 }
 
 #toggler,
