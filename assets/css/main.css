@@ -92,6 +92,7 @@ strong {
 @media (max-width: 700px) {
   .item-3d {
     margin-bottom: 10%;
+    position: inherit;
   }
 }
 .item-content {
