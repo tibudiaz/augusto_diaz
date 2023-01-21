@@ -22,3 +22,11 @@ input{
     border-radius: 5px;
     font-size: 15px;
 }
+.boton-js{
+    width: 100px;
+    color: black;
+    font-weight: bold;
+    text-shadow: 5px 5px 10px black;
+    background-color: c.$primercolor;
+    border: 2px solid c.$segundocolor;
+}

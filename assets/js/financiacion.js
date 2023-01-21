@@ -9,12 +9,12 @@ while(!robot2){
         if(adivinanza == 4){
             robot2 = true
             alert("Respuesta correcta puede continuar")
-            window.location.assign("../sub-pages/Financiacion.html")
             // pregunta edad solo si pasa la comprobacion de robot
                 let preguntaEdad = parseInt (prompt ("ingrese su edad"))
                 console.log(preguntaEdad)
                 if (preguntaEdad >=18){
                     alert("Eres mayor de Edad si puedes realizar Financiacion")
+                    window.location.assign("../sub-pages/Financiacion.html")
                     console.log(`su edad es ${preguntaEdad} y puede entrar a nuestra pagina de financiacion`)
                 }else{
                     alert("Eres menor de Edad no Puedes solicitar financiacion.")

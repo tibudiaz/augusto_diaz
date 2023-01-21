@@ -161,30 +161,21 @@ fieldset{
     margin-top: 5%;
     color: c.$primercolor;
     text-shadow: 5px 5px 10px black;
+    font-size: 18px;
 }
-.enviar{
-    margin-left: 85%;
+#Formulario{
+    width: 85%;
+    margin: 0 auto;
 }
-@media only screen and (min-width: 1280px){
-    fieldset{
-        margin-left: 30%;
-        margin-right: 30%;
-        text-align:justify;
-    }
-    .form{
-        text-align: right;
-        margin-left: 10%;
-    }
-    .formu{
-        margin-left: 30%;
-    }
-    .formu1{
-        margin-left: 39.4%;
-    }
-    .formu2{
-        margin-left: 41.7%;
-    }
-    .formu3{
-        margin-left: 26.3%;
+.formulario{
+    text-align: center;
+    font-size: 20px;
+    text-shadow: 5px 5px 10px c.$segundocolor;
+}
+@media screen and (min-width: 1100px){
+    #Formulario{
+        width: 20%;
+        position: relative;
+        margin: 0 auto;
     }
 }
